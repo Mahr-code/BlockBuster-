@@ -43,7 +43,7 @@ const layout = () => {
   // sidebar
   const sidebar = el('aside','sidebar');
   const brand = el('div','brand');
-  brand.append(el('div','logo','N'), el('div','title','Stitch'));
+  brand.append(el('div','logo','BB'), el('div','title','Blockbuster-News'));
   const nav = el('nav','nav');
   const mk = (t,a)=>{ const l = document.createElement('a'); l.href='#'; l.className='item'+(a?' active':''); l.textContent=t; return l; };
   nav.append(mk('Home',true), mk('Explore'), mk('Bookmarks'), mk('Settings'));
@@ -52,12 +52,12 @@ const layout = () => {
   ['Artificial Intelligence','Space Exploration','Clean Energy','Quantum Computing'].forEach(n=>{
     const li = document.createElement('li'); const a = document.createElement('a'); a.href='#'; a.textContent=n; li.appendChild(a); list.appendChild(li);
   });
-  const user = el('div','user'); user.append(el('div','avatar','A'), el('div','name','Alex Morgan'));
+  const user = el('div','user'); user.append(el('div','avatar','A'), el('div','name','Mahr Mudassar'));
   sidebar.append(brand, nav, secTitle, list, user);
   // main
   const main = el('div','main');
   const topbar = el('div','topbar');
-  topbar.append(el('div','title','Stitch - Design with AI'));
+  topbar.append(el('div','title','All types of news from all our the world'));
   const input = document.createElement('input'); input.className='search'; input.placeholder='Search articles, topics, or sources...';
   topbar.append(input);
   const chips = el('div','chips');
